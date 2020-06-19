@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RemoteConfig" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KuH-zC-QY7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHu-fn-9t6">
+                                <rect key="frame" x="16" y="786" width="382" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ytk-Im-wpm"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pHu-fn-9t6" secondAttribute="trailing" constant="16" id="96u-Kt-gXv"/>
+                            <constraint firstAttribute="bottom" secondItem="KuH-zC-QY7" secondAttribute="bottom" id="9az-dX-Cyq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pHu-fn-9t6" secondAttribute="bottom" constant="16" id="BXd-2a-GNj"/>
+                            <constraint firstItem="KuH-zC-QY7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hpy-2v-QTi"/>
+                            <constraint firstItem="KuH-zC-QY7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ONc-A4-ddZ"/>
+                            <constraint firstItem="KuH-zC-QY7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fbv-vX-EgN"/>
+                            <constraint firstItem="pHu-fn-9t6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xXT-0h-Y8E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="KuH-zC-QY7" id="z1k-Ja-d5C"/>
+                        <outlet property="startButton" destination="pHu-fn-9t6" id="deo-Ru-mhv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
